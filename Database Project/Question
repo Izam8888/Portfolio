@@ -1,0 +1,90 @@
+This is my first database project with my group in Bina Nusantara University
+
+Question :
+Soal
+Case
+TStore
+
+	TStore is a clothing store that is managed by a group of young entrepreneurs. For now, they organize their purchase and sales by hand manually. The activity that the store does is purchasing clothes from vendor and selling the clothes to the customers. But, as the store grows, they become too burdened by this method. That’s why you, are chosen to help them organize their sales and purchase records.
+
+To improve TStore’s management, Mady hired you as a database administrator are required to analyze and design a database for Bob’s shop using SQL Server Management Studio.
+
+	Every staff that hired by TStore have a task to serve a customer who wants to buy clothes at their store and purchase clothes from vendors. Every staff must be following the procedures to become a staff, which are:
+•	Every staff hired must have a personal information like name, address, phone number, gender, email, and salary. Every staff has an identification number with the following format:
+ 
+•	Staff can purchase clothes from vendors.
+•	Every purchase transaction made with the vendor have all the information about staff, vendor, purchase date, clothes purchased, and the quantity of each cloth. Every purchase transaction has an identification number with the following format:
+ 
+•	Staff can also serve a customer who wants to buy clothes.
+•	Every sales transaction made by the customer have all the information about staff, customer, sales date, clothes sold, and the quantity of each cloth. Every sales transaction has an identification number with the following format:
+ 	
+•	Every cloth purchased from vendor and sold by TStore have its own brand, price, category, and the stock TStore currently has. Every cloth has an identification number with the following format:
+ 
+•	The category of each cloth has its name and an identification number with the following format
+ 
+	Every customer that wants to buy clothes at TStore must be following the sales transaction procedures, those are:
+•	Every customer that wants to purchase a product must already completed personal information like name, address, phone number, gender, and email. Every customer has an identification number with the following format:
+ 
+•	Customer can purchase more than one cloth in every transaction.
+
+Every vendor that wants to sell their cloth must be following the purchase transaction procedures, those are:
+•	Every vendor that wants to sell their clothes must already completed personal information like name, address, phone number, and email. Every vendor has an identification number with the following format:
+ 
+•	Vendor can sell more than one cloth in every transaction.
+
+
+
+
+
+
+Notes:
+•	Staff phone number must start with ‘08’ (without quote).
+•	Staff salary must be more than or equal 3000000.
+•	Cloth price must be more than or equal 20000.
+•	Cloth brand must be more than 5 characters.
+•	Customer Phone must start with ‘08’ (without quote).
+•	Vendor Phone must start with ‘08’ (without quote).
+•	Purchase Date must be less than current time minus 1 hour.
+•	Sales Date must be less than current time minus 1 hour.
+
+As stated above, TStore still uses manual management system to maintain the sales and purchase transactions. You have to create a database system that can store data and maintain the sales and purchase transactions. The tasks that you must do are:
+a.	Create Entity Relationship Diagram to maintain sales and purchase transactions.
+b.	Create a database system using DDL syntax that relevant with sales and purchase transactions.
+c.	Create query using DML syntax to fill the tables in database systems with data based on the following conditions:
+•	Master table must be filled with more than or equals 10 data.
+•	Transaction table must be filled with more than or equals 15 data.
+•	Transaction detail table must be filled with more than or equals 25 data.
+d.	Create query using DML syntax to simulate the transactions process for sales and purchase transactions. 
+Note: DML syntax to fill database and DML syntax to simulate the transactions process should be a different query.
+e.	To support database management process in TStore, the managers asked you to provide some query that resulting important data. The requirements that asked from them are:
+1.	Display Transaction Count (obtained from the total transaction), StaffName, and VendorName for each purchase which made by staff whose salary is between 5000000 and 10000000, to a vendor whose name contains character ‘o’.
+
+2.	Display SalesId, SalesDate, CustomerName, and CustomerAddress for every sale that happens on 15th day of the month, where the sum of the clothes’ price is more than 150000.
+
+3.	Display Month (obtained from month name of one month before current date), Transaction Count (obtained from the total of sales), and Cloth Sold Count (obtained from sum quantity) for each sale which is managed by female staff and the sold cloth price is more than 70000.
+
+4.	Display Brand Last Name (obtained from the last word from the ClothBrand) and Maximum Cloth(s) Sold (obtained from maximum quantity) for each sale which the sum of the quantity is more than 5 and less than 10.
+5.	Display ClothBrand, ClothPrice, and Stock for each purchase where the cloth price is between average price minus 35000 and the average price. The average price is obtained from average cloth price which is purchased from vendor with the first name ‘Saad’.
+(alias subquery)
+
+6.	Display Sales Date (obtained SalesDate with format ‘mm/dd/yyyy’), ClothBrand, Quantity for each sale where the quantity is more than total sales happened in May. Sort the result by Quantity in ascending order.
+(alias subquery)
+
+7.	Display PurchaseId, Staff Name (obtained from lowercase the StaffName), Staff Salary (obtained from adding ‘IDR ’ in front of StaffSalary), Purchase Date (obtained from the PurchaseDate with format ‘Mon dd, yyyy’) and Total Quantity (obtained from the sum of purchased clothes’ quantity) for every purchase where the Quantity is more than MinQuantity (obtained from the minimum quantity from each purchase that happened on the 4th  month).
+(alias subquery)
+
+
+
+8.	Display Vendor Id (obtained from the last 3 character of VendorId), VendorName, Clothes Bought (obtained from sum of quantity and ended with ‘ piece(s)’), and Vendor Phone (obtained by replacing 2 first digits with ‘+62’) for every purchase where the Clothes Bought is less than 100 and quantity is more than the average quantity of all transactions.
+(alias subquery)
+
+9.	Create a view named ‘StoreSalesView’ to display SalesId, CustomerName, CustomerPhone, Cloth Average Price (obtained from average of ClothPrice starts with ‘IDR ’), and Sales Quantity (obtained from the sum of quantity ended with ‘ piece(s)’) for every sales which Cloth Average Price is more than 100000 and the Sales Quantity is more than 4.
+
+10.	Create a view named ‘StorePurchaseView’ to display the Purchase Month (obtained from the month name of purchase date), Minimum Purchase Quantity (obtained from the minimum of quantity), and Purchased Cloth Count (obtained from the total of clothes purchased) for every purchase where the Minimum Purchase Quantity is more than 10 and the Purchase Cloth Count is more than 1.
+
+File that must be collected:
+1.	Entity Relationship Diagram (.vpp, .png)
+2.	Query to create the database system. (.sql)
+3.	Query to insert data into tables. (.sql)
+4.	Query to simulate the transactions processes. (.sql)
+5.	Query to answer the 10 cases. (.sql)
