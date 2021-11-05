@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+/* .header h1{
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+} */
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 3.5em 0;
+    background-color: black;
+}
+
+.header img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Navigation */
+
+/* Navigation Menu */
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+nav{
+    background: green;
+}
+
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    float: none;
+    display: inline-block;
+    background: green;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+.show, .icon, input{
+    display: none;
+}
+
+/* .navigation{
+    display: flex;  
+}
+
+.navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    width: 25%;
+    min-height: 3.25em;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+} */
+
+/* Content */
+
+.content{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* width: 500px;
+    height: 800px; */
+}
+
+/* BATAS AWAL COBA-COBA */
+.content-fill{
+    margin: 3em 0;
+    margin-left: 5em;
+    padding: 1.5em;
+    /* display: flex; */
+}
+
+.content-fill-image-motor img{
+    width: 50%;
+}
+
+.content-fill-title{
+    color: green;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.content-fill-post-time{
+    color: grey;
+    font-style: italic;
+}
+
+.content-fill-body{
+    max-width: 35ch;
+    font-size: 1.25em;
+    text-align: justify;
+    color: white;
+    margin-bottom: 1em;
+}
+/* BATAS AKHIR COBA-COBA */
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 1em 1.5em;
+}
+
+.text-footer{
+    font-size: 1.15rem;
+    font-weight: 500;  
+}
+
+
+
+.sosmed-pic img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.sosmed-footer-r1{
+    font-size: 1.15rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* End */
+
+@media all and (max-width: 968px){
+    nav ul{
+        margin-right: 0;
+        float: left;
+    }
+
+    nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    .show:hover{
+        color: cyan;
+    }
+
+    .icon{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+
+    .show + a, ul{
+        display: none;
+    }
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+}
+
+/* @media only screen and (max-width: 768px){
+    .navigation{
+        flex-direction: column;
+        
+    }
+
+    .navigation a{
+        width: 100%;
+        position: absolute;
+        transition: 0.5s;
+        
+    }
+
+    .navigation::before{
+        content: 'Menu';
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.15rem;
+        width: 100%;
+        min-height: 3.25em;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navigation:hover a:nth-child(1){
+        transform: translateY(calc(1 * 3.25em)); 
+    }
+
+    .navigation:hover a:nth-child(2){
+        transform: translateY(calc(2 * 3.25em)); 
+    }
+
+    .navigation:hover a:nth-child(3){
+        transform: translateY(calc(3 * 3.25em)); 
+    }
+
+    .navigation:hover a:nth-child(4){
+        transform: translateY(calc(4 * 3.25em)); 
+    }
+
+    .navigation:hover a:nth-child(5){
+        transform: translateY(calc(5 * 3.25em)); 
+    }
+
+   
+} */

@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+}
+
+.image{
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider{
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    transform: translate(-50% -50%);
+}
