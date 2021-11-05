@@ -1,0 +1,52 @@
+Soal
+Case
+
+YBIKE
+
+YBIKE is a motorcycle dealer formed on December 30, 2016 and based in Jakarta, Indonesia. YBIKE sells motorcycles from 2 famous brands of motorcycle: Vixian and Kawasako. The dealer is led by Carvin Joestar. The products are kept inside a secure warehouse and covered with a large fabric to keep them clean of dusts.
+As the growth of the information technology, YBIKE plans to create logo and website that represent the company image. With this website existence, YBIKE hopes they can improve their service towards their customer. By having some requirements, YBIKE entrusts you as a web designer to design and create their logo and website. 
+	Mr. Carvin Joestar as the owner of the business has provided you with his own requirements. He has high hope for you to finish the website quickly. The requirements of YBIKE are described as follow:
+
+1.	YBIKE needs a logo that represents the image of the company. Consider the customer segment, shape, and colors when designing the logo. The logo will be created using Adobe Photoshop CC 2020 and ensure no layers are merged.
+
+2.	YBIKE wants you to design the blueprint of your homepage first before starting the development on the HTML files. The blueprint will be created using Adobe Photoshop CC 2020. Ensure the blueprint that you create are the exact same with the website that you will make later. The homepage blueprint will contain header, navigation, content, and footer as its structure.
+
+3.	The website will contain information about the products that customer could reserve. You also need to create a page for the customer to reserve the motorcycle.
+
+4.	YBIKE wants you to build the website attractive, appealing, and fully functioning, furthermore Mr. Joestar wants you to create the website using responsive design. The website should be accessible by using mobile phone in a perfect way. To achieve that, use 5 kinds of CSS properties and JavaScript. Use Meta viewport tag and media screen rule that will be applied if the screen width is below 500px.
+
+5.	The website consists of five main pages. They are home, two product pages, gallery, and reserve. You have to create the dropdown navigation menu using CSS. Below are the requirements for each page:
+•	Home
+YBIKE wants this page shows little information about their company, and some latest news. YBIKE also wants to have image-slider on this page to show some news and latest exhibition images.
+•	Products
+  This page is divided into 2 pages: VIXIAN and KAWASAKO. Each page displays some information about the product such as: Motorcycle Type, Price, and Description.  Please provide image of the product as well.
+•	Gallery 
+This page shows all exhibition pictures that has happened so far.
+•	Reserve
+This page helps customer to choose and order their motorcycle. To order their catering, customer must choose the product, input quantity and color choice, and then submit some personal information such as name, phone, and address. You must use appropriate input type for each form input. You are also asked to create 5 kinds of validation using JavaScript.
+
+Guidelines:
+a.	Design your website by observing the principles of human and computer interaction. Set up your site as creative as possible but still strive for consistency.
+b.	The logo and blueprint (only homepage) must be designed using Adobe Photoshop CS3 and make sure no layers are merged.
+c.	Consider the color, font, image, size, and layout that you use to design the logo and website.
+d.	All pages mentioned in the requirement should be created based on your template design.
+e.	Use only external CSS. Internal or inline CSS will not be marked.
+f.	Use CSS box positioning concept to design your web structure, do not use table for the layout.
+g.	Consider the language you use, including spelling and grammar, feel free to choose either Bahasa or English, but you cannot have both at the same time.
+h.	Make your website responsive so it can deliver in any size, particularly for desktops, tablets and mobile devices.
+i.	Organize your files with subdirectories.
+j.	Include references (link from a website, book) that you use in creating the website.
+
+Must be collected:
+1.	Logo (*.psd).
+2.	Web template for homepage (*.psd).
+3.	Website (*.html / *.htm, *.css, *.js).
+
+Here are the rules that you must follow to create your project:
+1.	Use appropriate software for this subject based on Sistem Praktikum that can be downloaded from Binusmaya.
+2.	Collect appropriate files for this subject based on Sistem Praktikum that can be downloaded from Binusmaya.
+3.	Include the other files that can support your project, such as:
+•	All files in your project
+•	Other files (image, audio, video, etc.) used in your project
+•	*.DOC file (documentation of your project) that contains the reference links of additional files (image, audio, video, etc.) used in your project
+4.	If there are some hidden creativities, please note them in the existing documentation because they can greatly affect your project score
