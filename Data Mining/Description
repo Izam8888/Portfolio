@@ -1,0 +1,9 @@
+In this course, we were given the freedom to choose a theme for creating a data mining program along with the selected method.
+In this stage, we developed a project titled "SISTEM REKOMENDASI GAME DI STEAM BERDASARKAN GENRE MENGGUNAKAN COSINE SIMILARITY MATRIX".
+
+The goal of this project is to find an effective way to provide recommendations that are most suitable so that users won't be disappointed after purchasing and playing the game.
+The benefits obtained from the project :
+
+1. The created recommendation application is able to assist users in selecting games that suit their preferred categories.
+2. The recommendation application can help gamers get a list of games with names and genres that are closely similar to the user's input.
+3. The application can assist in choosing games that have positive reviews based on feedback from both regular gamers and game pundits.
